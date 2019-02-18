@@ -1,0 +1,15 @@
+<h3 class="center">Edit <%= @title%> Page</h3>
+<br/>
+<div class="container">
+  <form method="post" action="/<%= @title %>">
+    <input type="hidden" name="_method" value="put">
+    <div class="input-field">
+      <label for="content">Content:</label>
+      <textarea class="materialize-textarea" name="content" id="content"><%= @content%></textarea>
+    </div>
+    <br/>
+    <button class="btn waves-effect waves-light cyan" type="submit">Submit
+      <i class="material-icons right">send</i>
+    </button> 
+  </form>
+</div>

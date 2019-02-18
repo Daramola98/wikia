@@ -1,0 +1,16 @@
+<h1 class="center"><%= @title %></h1>
+<div class="container">
+  <p>
+    <%= @content %>
+  </p>
+  <div>
+    <a href="/<%= @title %>/edit">Edit This Page</a>
+    <form style="display: inline-block" method="post" action="/<%= @title %>">
+      <input type="hidden" name="_method" value="delete">
+      <button class="btn waves-effect waves-light cyan" type="submit">Delete this page
+        <i class="material-icons right">delete</i>
+      </button> 
+    </form>
+  </div>
+</div>
+

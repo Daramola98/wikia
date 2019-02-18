@@ -1,0 +1,5 @@
+<div id="list-pages" class="collection">
+  <% @pages.each do |page| %>
+    <a href="/<%= "#{page}"%>" class="collection-item"><%= page%></a>
+  <%end%>
+</div>
